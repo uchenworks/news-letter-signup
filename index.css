@@ -1,0 +1,279 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap'); */
+
+:root {
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* image-container */
+
+.desktop_hero {
+  display: none;
+}
+
+.mobile_hero {
+  width: 100%;
+}
+
+.success_icon {
+  width: 4em;
+}
+/**************** -Typography- **************/
+
+h1 {
+  margin-top: 1em;
+  font-size: 3rem;
+  color: var(--dark-slate-grey);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--dark-slate-grey);
+}
+
+h4 {
+  color: var(--Charcoal-Grey);
+  opacity: 95%;
+  font-size: 0.85rem;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.email-highlight {
+  font-weight: 900;
+  color: var(--dark-slate-grey);
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--Charcoal-Grey);
+}
+
+p {
+  color: var(--Charcoal-Grey);
+  margin-top: 2em;
+}
+
+.caption {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+}
+
+.valid_mail {
+  font-weight: 700;
+  color: var(--tomato);
+  font-size: 0.95rem;
+  display: none;
+}
+
+/**************** Typography-End **************/
+/**************** Typography-End **************/
+
+.check_icon {
+  position: relative;
+  bottom: 5px;
+}
+
+.list_one,
+.list_two,
+.list_three {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+/**************** Input-Container **************/
+
+/* .wrapper {
+  display: none;
+} */
+
+.inner-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.left_side_container {
+  padding-left: 1em;
+}
+
+.list_check_container {
+  margin-top: 2em;
+}
+
+.input-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+#input_text_field {
+  padding: 1.5em 12em 1.5em 2em;
+  border-radius: 10px;
+  border: 1px solid var(--Grey);
+  border-radius: 6px;
+}
+
+#input_text_field:hover {
+  border: 2px solid var(--dark-slate-grey);
+}
+
+#input_submit_btn {
+  padding: 1.3em 4.5em;
+  border-radius: 6px;
+  background-color: var(--dark-slate-grey);
+  color: var(--White);
+  border: none;
+  font-weight: 700;
+}
+
+.caption-container {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+#input_submit_btn:hover {
+  background-color: var(--tomato);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.thanks_wrapper {
+  padding-left: 1em;
+  height: 100%;
+  display: none;
+}
+
+.inner_thanks_wrapper {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.dismiss-btn {
+  margin-top: 23em;
+  padding: 1em 8em;
+  border-radius: 6px;
+  background-color: var(--dark-slate-grey);
+  color: var(--White);
+  border: none;
+  font-weight: 700;
+}
+.dismiss-btn:hover {
+  background-color: var(--tomato);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/**************** Desktop-Section-Design **************/
+
+@media (min-width: 767px) {
+  #input_text_field {
+    padding: 1.5em 40em 1.5em 2em;
+  }
+
+  #input_sumbit_btn {
+    padding: 1.1em 18.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-color: var(--Charcoal-Grey);
+  }
+
+  p {
+    width: 90%;
+  }
+
+  .desktop_hero {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile_hero {
+    display: none;
+  }
+
+  .wrapper {
+    background-color: var(--White);
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .inner-wrapper {
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+  }
+
+  #input_text_field {
+    padding: 1.5em 12em 1.5em 2em;
+  }
+
+  #input_sumbit_btn {
+    padding: 1.3em 4.5em;
+  }
+
+  .thanks_wrapper {
+    width: 30em;
+    height: 28em;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 30px;
+    display: none;
+  }
+
+  .inner_thanks_wrapper {
+    padding-top: 3em;
+    padding-left: 2em;
+  }
+
+  h2 {
+    width: 70%;
+  }
+
+  .dismiss-btn {
+    margin-top: 2em;
+    margin-left: 2.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .inner-wrapper {
+    padding: 3% 3%;
+  }
+}
+@media (min-width: 1300px) {
+  .inner-wrapper {
+    padding: 2% 2%;
+  }
+}
